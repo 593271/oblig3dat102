@@ -32,12 +32,12 @@ public interface BSTreADT<T extends Comparable<T>> {
 	/*****************************************************************
 	 * Returnerer en referanse til minste elementet, null viss tre er tomt.
 	 *****************************************************************/
-	public T finnMin();
+	public T finnMin(BinaerTreNode<T> node);
 	
 	/*****************************************************************
 	 * Returnerer en referanse til største elementet, null viss tre er tomt.
 	 *****************************************************************/
-	public T finnMaks();
+	public T finnMaks(BinaerTreNode<T> p);
 
 	/************************************************************************
 	 * Fjerner et element fra dette treet hvis det fins, ellers returneres null
